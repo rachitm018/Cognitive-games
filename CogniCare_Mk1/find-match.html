@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find the Match</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="find-match-page">
+
+        <div class="game-container">
+
+            <a href="games.html" class="back-link">
+                ← Back to Games
+            </a>
+
+            <div class="memory-game">
+
+                <div class="memory-header">
+
+                    <div>
+                        <h1>Find the Match</h1>
+
+                        <p>
+                            Find the matching pairs.
+                        </p>
+                    </div>
+
+                    <button
+                        class="restart-button"
+                        onclick="startMemoryGame()">
+                        Restart
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="gameBoard"
+                    class="memory-board">
+                </div>
+
+
+                <div
+                    id="gameMessage"
+                    class="game-message">
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/find-match.js"></script>
+
+</body>
+
+</html>

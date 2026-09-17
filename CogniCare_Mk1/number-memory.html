@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Memory</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="number-memory-game-page">
+
+        <div class="game-container">
+
+            <a href="games.html" class="back-link">
+                ← Back to Games
+            </a>
+
+            <div class="number-memory-game">
+
+                <div class="number-memory-header">
+
+                    <div>
+                        <h1>Number Memory</h1>
+
+                        <p>
+                            Memorize the number and type it back.
+                        </p>
+                    </div>
+
+                    <button
+                        class="restart-button"
+                        onclick="startNumberMemory()">
+                        Restart
+                    </button>
+
+                </div>
+
+
+                <!-- GAME INFO -->
+
+                <div class="game-stats">
+
+                    <div class="stat-box">
+                        <span>Score</span>
+                        <strong id="numberScore">0</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Round</span>
+                        <strong id="numberRound">1</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Digits</span>
+                        <strong id="numberLength">3</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- GAME AREA -->
+
+                <div class="number-memory-area">
+
+                    <div
+                        id="numberStatus"
+                        class="number-status">
+                        Get ready...
+                    </div>
+
+
+                    <div
+                        id="numberDisplay"
+                        class="number-display">
+                    </div>
+
+
+                    <div
+                        id="numberInputArea"
+                        class="number-input-area">
+
+                        <input
+                            type="text"
+                            id="numberInput"
+                            class="number-input"
+                            inputmode="numeric"
+                            autocomplete="off"
+                            placeholder="Enter the number"
+                        >
+
+                        <button
+                            id="numberSubmit"
+                            class="game-button"
+                            onclick="submitNumber()">
+                            Submit
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="numberMessage"
+                        class="game-message">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/number-memory.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Games</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="games-page">
+
+        <div class="games-container">
+
+            <header class="games-header">
+
+                <div class="brand">
+                    <span class="brand-icon">✦</span>
+                    CogniCare
+                </div>
+
+                <button class="home-button" onclick="goHome()">
+                    Home
+                </button>
+
+            </header>
+
+            <p class="games-greeting">
+                Hello, <span id="playerName">there</span> 👋 — choose an activity you'd like to play.
+            </p>
+
+
+            <section class="games-grid">
+
+                <!-- Find the Match -->
+
+                <div class="game-card" onclick="openGame('find-match.html')">
+
+                    <div class="card-title-bar">
+                        <h2>Find the Match</h2>
+                    </div>
+
+                    <div class="card-icon-area">
+                        <span class="game-icon">🃏</span>
+                    </div>
+
+                    <div class="card-description-area">
+                        <h3 class="description-label">Description-</h3>
+                        <p>Find matching pairs of familiar pictures.</p>
+                        <button class="game-button">Play!</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Chalkboard Challenge -->
+
+                <div class="game-card" onclick="openGame('chalkboard-challenge.html')">
+
+                    <div class="card-title-bar">
+                        <h2>Chalkboard Challenge</h2>
+                    </div>
+
+                    <div class="card-icon-area">
+                        <span class="game-icon">🧮</span>
+                    </div>
+
+                    <div class="card-description-area">
+                        <h3 class="description-label">Description-</h3>
+                        <p>Look at the numbers and choose which number is greater.</p>
+                        <button class="game-button">Play!</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Number Memory -->
+
+                <div class="game-card" onclick="openGame('number-memory.html')">
+
+                    <div class="card-title-bar">
+                        <h2>Number Memory</h2>
+                    </div>
+
+                    <div class="card-icon-area">
+                        <span class="game-icon">🔢</span>
+                    </div>
+
+                    <div class="card-description-area">
+                        <h3 class="description-label">Description-</h3>
+                        <p>Memorize the number and type it back.</p>
+                        <button class="game-button">Play!</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Eb and Flow -->
+
+                <div class="game-card" onclick="openGame('eb-and-flow.html')">
+
+                    <div class="card-title-bar">
+                        <h2>Eb &amp; Flow</h2>
+                    </div>
+
+                    <div class="card-icon-area">
+                        <span class="game-icon">🌿</span>
+                    </div>
+
+                    <div class="card-description-area">
+                        <h3 class="description-label">Description-</h3>
+                        <p>Follow the leaves and respond to their changing directions.</p>
+                        <button class="game-button">Play!</button>
+                    </div>
+
+                </div>
+
+
+                <!-- Memory Sequence -->
+
+                <div class="game-card" onclick="openGame('memory-sequence.html')">
+
+                    <div class="card-title-bar">
+                        <h2>Memory Sequence</h2>
+                    </div>
+
+                    <div class="card-icon-area">
+                        <span class="game-icon">🧠</span>
+                    </div>
+
+                    <div class="card-description-area">
+                        <h3 class="description-label">Description-</h3>
+                        <p>Remember the sequence and repeat it correctly.</p>
+                        <button class="game-button">Play!</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

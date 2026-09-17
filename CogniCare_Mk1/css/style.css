@@ -1,0 +1,2365 @@
+/* =================================
+   GLOBAL STYLES
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f1ea;
+    color: #333;
+}
+
+
+/* =================================
+   LANDING PAGE
+================================= */
+
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.landing-content {
+    max-width: 650px;
+}
+
+.logo {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.primary-button {
+    border: none;
+    border-radius: 14px;
+    padding: 18px 50px;
+    font-size: 22px;
+    cursor: pointer;
+    background: #163a1b;
+    color: white;
+}
+
+.primary-button:hover {
+    opacity: 0.9;
+}
+
+
+/* =================================
+   LANDING PAGE — HERO REDESIGN
+   (used by index.html only — profile.html
+   still uses .landing-page/.logo/.subtitle/
+   .primary-button above)
+================================= */
+
+.landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px 80px;
+
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+
+    background: #1D6F64;
+    border-radius: 999px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.sparkle-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.brand-name {
+    font-size: 24px;
+    color: #18312B;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nav-links a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #18312B;
+    text-decoration: none;
+}
+
+.nav-cta {
+    border: 1px solid #1D6F64;
+    background: #1D6F64;
+    color: white;
+
+    border-radius: 999px;
+    padding: 0 28px;
+    height: 56px;
+
+    font-size: 17px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.nav-cta:hover {
+    opacity: 0.9;
+}
+
+
+.hero {
+    /* position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 80px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+    font-family: 'Inter', Arial, sans-serif; */
+
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 80px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+
+    font-family: 'Inter', Arial, sans-serif;
+
+    /* --- new background --- */
+    background-image:
+        linear-gradient(rgba(244, 241, 234, 0.4), rgba(244, 241, 234, 0.5)),
+        url("https://travelogyindia.b-cdn.net/storage/app/upload/northeast-history.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    max-width: 610px;
+    padding-top: 40px;
+}
+
+.hero-eyebrow {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #1D6F64;
+}
+
+.hero-title {
+    font-size: 62px;
+    line-height: 104%;
+    font-weight: 400;
+    color: #18312B;
+}
+
+.hero-description {
+    font-size: 20px;
+    line-height: 155%;
+    color: #081310;
+    max-width: 560px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    border: 1px solid #1D6F64;
+    background: #1D6F64;
+    color: white;
+
+    border-radius: 999px;
+    padding: 0 28px;
+    height: 56px;
+
+    font-size: 17px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    border: 1px solid #D7DED8;
+    background: white;
+    color: #18312B;
+
+    border-radius: 999px;
+    padding: 0 28px;
+    height: 56px;
+
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-secondary:hover {
+    background: #f5f5f5;
+}
+
+.trust-note {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 15px;
+    color: #141917;
+}
+
+.circle-x-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+
+/* GAME PREVIEW CARD */
+
+.game-preview {
+    position: relative;
+    width: 606px;
+    height: 590px;
+    flex-shrink: 0;
+
+    background: #DCEDE7;
+    border-radius: 28px;
+}
+
+.decorative-circle {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    right: -30px;
+    top: -40px;
+
+    background: #F2C75C;
+    opacity: 0.55;
+    border-radius: 50%;
+}
+
+.preview-card {
+    position: absolute;
+    width: 480px;
+    left: 63px;
+    top: 72px;
+
+    background: white;
+    box-shadow: 0px 10px 28px rgba(24, 49, 43, 0.08);
+    border-radius: 28px;
+
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.preview-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 16px 34px rgba(24, 49, 43, 0.14);
+}
+
+.preview-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.preview-label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.preview-prompt {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1D6F64;
+    text-transform: uppercase;
+}
+
+.preview-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: #18312B;
+}
+
+.preview-progress {
+    width: 61px;
+    height: 30px;
+    flex-shrink: 0;
+
+    background: #F7D8C9;
+    border-radius: 999px;
+}
+
+.preview-image {
+    width: 100%;
+    height: 282px;
+    object-fit: cover;
+
+    border-radius: 8px;
+    border: 1px solid #000000;
+    box-shadow: 8px 7px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/* MOBILE — LANDING HERO */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 30px 80px;
+    }
+
+    .hero-copy {
+        align-items: center;
+        max-width: 100%;
+        padding-top: 0;
+    }
+
+    .hero-title,
+    .hero-description {
+        max-width: 100%;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .game-preview {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .decorative-circle {
+        display: none;
+    }
+
+    .preview-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .landing-nav {
+        padding: 16px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+    }
+}
+
+
+/* =================================
+   PROFILE PAGE
+================================= */
+
+/* .profile-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 550px;
+}
+
+.profile-card h1 {
+    margin-bottom: 10px;
+}
+
+.name-input {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 25px;
+
+    border: 2px solid #d5d0c6;
+    border-radius: 14px;
+
+    background: white;
+
+    font-size: 20px;
+    text-align: center;
+
+    outline: none;
+}
+
+.name-input:focus {
+    border-color: #6d8f72;
+}
+
+.error-message {
+    margin-top: 15px;
+    font-size: 18px;
+} */
+
+
+
+/* =================================
+   PROFILE PAGE
+================================= */
+
+.profile-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+
+    background-image: url("https://www.tourmyindia.com/blog//wp-content/uploads/2019/11/Marvel-at-the-Beautiful-Landscape-Northeast.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.profile-card h1 {
+    margin-bottom: 10px;
+}
+
+.name-input {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 25px;
+
+    border: 2px solid #d5d0c6;
+    border-radius: 14px;
+
+    background: white;
+
+    font-size: 20px;
+    text-align: center;
+
+    outline: none;
+}
+
+.name-input:focus {
+    border-color: #6d8f72;
+}
+
+.error-message {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+/* =================================
+   GAMES PAGE
+================================= */
+
+/* .games-page {
+    min-height: 100vh;
+    padding: 50px 30px;
+} */
+
+
+.games-page {
+    min-height: 100vh;
+    padding: 50px 30px;
+
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXgi1d7_l08h9siAwKSC3TloCb1zeySWprwEW9FVOe_FyAaVIaVoiPwu4a&s=10");
+        /* url("https://media.easemytrip.com/media/Blog/India/637763055824686983/637763055824686983McBfr2.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.games-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* NAV BAR */
+
+.games-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #eceae6;
+    border-radius: 16px;
+
+    padding: 14px 24px;
+
+    margin-bottom: 18px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 19px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.brand-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: #2f6659;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.home-button {
+    border: none;
+
+    background: #2f6659;
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 10px 24px;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home-button:hover {
+    opacity: 0.9;
+}
+
+.games-greeting {
+    margin: 4px 4px 28px;
+    font-size: 16px;
+    color: #0c0707;
+}
+
+
+/* CARD GRID */
+
+.games-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.game-card {
+    flex: 0 1 300px;
+    max-width: 300px;
+
+    background: white;
+    border: 1px solid #e4dfef;
+    border-radius: 18px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-title-bar {
+    padding: 18px 22px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title-bar h2 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.card-icon-area {
+    background: #ece6f7;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon-area .game-icon {
+    font-size: 48px;
+}
+
+.card-description-area {
+    background: #fbf7fa;
+
+    padding: 20px 22px 55px;
+    position: relative;
+
+    flex-grow: 1;
+}
+
+.description-label {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2b2b2b;
+}
+
+.card-description-area p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #5c5c5c;
+}
+
+.game-button {
+    position: absolute;
+    right: 18px;
+    bottom: 16px;
+
+    border: none;
+
+    background: #5b4b8a;
+    color: white;
+
+    border-radius: 20px;
+
+    padding: 8px 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.game-button:hover {
+    background: #4a3d72;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .games-header {
+        padding: 12px 16px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .game-card {
+        flex: 1 1 100%;
+        max-width: 400px;
+    }
+}
+
+
+/* =================================
+   GENERAL GAME PAGE
+================================= */
+
+.game-page {
+    min-height: 100vh;
+    padding: 40px 30px;
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-block;
+
+    color: #040704;
+
+    text-decoration: none;
+
+    font-size: 20px;
+
+    margin-bottom: 60px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.game-intro {
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+.game-intro .game-icon {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.game-intro h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.game-intro p {
+    font-size: 21px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+
+/* =================================
+   FIND THE MATCH
+================================= */
+
+.find-match-page {
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url("https://media.easemytrip.com/media/Blog/India/637763055824686983/637763055824686983McBfr2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.memory-game {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.memory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.memory-header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.memory-header p {
+    font-size: 20px;
+}
+
+.restart-button {
+    border: 2px solid #6d8f72;
+
+    background: white;
+    color: #6d8f72;
+
+    border-radius: 12px;
+
+    padding: 12px 22px;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background: #6d8f72;
+    color: white;
+}
+
+.memory-board {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+.memory-card {
+    aspect-ratio: 1 / 1;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: #6d8f72;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+
+    transition: transform 0.4s ease;
+}
+
+.memory-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background: #6d8f72;
+}
+
+.card-back {
+    background: white;
+
+    border: 3px solid #6d8f72;
+
+    font-size: 55px;
+
+    transform: rotateY(180deg);
+}
+
+
+/*
+   Matched cards stay face-up
+   and remain fully visible.
+*/
+
+.memory-card.matched {
+    opacity: 1;
+    cursor: default;
+}
+
+.game-message {
+    text-align: center;
+
+    font-size: 24px;
+
+    margin-top: 30px;
+
+    min-height: 35px;
+}
+
+
+/* =================================
+   CHALKBOARD CHALLENGE
+================================= */
+
+.chalkboard-game-page{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+        url("https://media.easemytrip.com/media/Blog/India/637763055824686983/637763055824686983McBfr2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.chalkboard-game {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.chalkboard-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.chalkboard-header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.chalkboard-header p {
+    font-size: 20px;
+}
+
+
+/* =================================
+   SCORE / TIMER / ROUND
+================================= */
+
+.game-stats {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.stat-box {
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 12px 30px;
+
+    text-align: center;
+
+    min-width: 120px;
+}
+
+.stat-box span {
+    display: block;
+
+    font-size: 15px;
+
+    margin-bottom: 4px;
+}
+
+.stat-box strong {
+    font-size: 26px;
+}
+
+
+/* =================================
+   CHALKBOARD
+================================= */
+
+.chalkboard {
+    background: #30352f;
+
+    border: 12px solid #76583f;
+
+    border-radius: 12px;
+
+    padding: 45px 35px;
+
+    min-height: 430px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.chalk-question {
+    color: #f4f1ea;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =================================
+   NUMBER CARDS
+================================= */
+
+.number-area {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.number-card {
+    width: 280px;
+    height: 150px;
+
+    background: transparent;
+
+    color: #f4f1ea;
+
+    border: 3px solid #f4f1ea;
+
+    border-radius: 12px;
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.number-card:hover {
+    transform: scale(1.03);
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.number-card:active {
+    transform: scale(0.98);
+}
+
+.vs {
+    color: #f4f1ea;
+
+    font-size: 22px;
+}
+
+
+/* =================================
+   EQUAL BUTTON
+================================= */
+
+.equal-option {
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+.equal-button {
+    background: transparent;
+
+    color: #f4f1ea;
+
+    border: 2px solid #f4f1ea;
+
+    border-radius: 10px;
+
+    padding: 12px 25px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.equal-button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =================================
+   CHALKBOARD MESSAGE
+================================= */
+
+.chalk-message {
+    text-align: center;
+
+    color: #f4f1ea;
+
+    font-size: 22px;
+
+    min-height: 30px;
+
+    margin-top: 25px;
+}
+
+
+/* =================================
+   KEYBOARD HELP
+================================= */
+
+.keyboard-help {
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+.keyboard-help > p {
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.key-row {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 5px 15px;
+
+    font-size: 16px;
+}
+
+.key {
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 38px;
+    height: 38px;
+
+    background: white;
+
+    border: 2px solid #d5d0c6;
+
+    border-radius: 8px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   MOBILE — GENERAL
+================================= */
+
+@media (max-width: 700px) {
+
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .games-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .games-header h1 {
+        font-size: 32px;
+    }
+
+
+    /* CHALKBOARD */
+
+    .chalkboard-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .game-stats {
+        gap: 8px;
+    }
+
+    .stat-box {
+        min-width: 90px;
+
+        padding: 10px 15px;
+    }
+
+    .number-area {
+        flex-direction: column;
+    }
+
+    .number-card {
+        width: 90%;
+
+        max-width: 280px;
+    }
+
+    .vs {
+        margin: -5px 0;
+    }
+
+    .chalkboard {
+        padding: 35px 15px;
+    }
+}
+
+
+/* =================================
+   MOBILE — FIND THE MATCH
+================================= */
+
+@media (max-width: 600px) {
+
+    .memory-board {
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 8px;
+    }
+
+    .card-back {
+        font-size: 35px;
+    }
+
+    .memory-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .memory-header h1 {
+        font-size: 30px;
+    }
+}
+/* =================================
+   CHALKBOARD ANIMATIONS
+================================= */
+
+
+/* 5 SECOND COUNTDOWN */
+
+.countdown-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: rgba(48, 53, 47, 0.96);
+
+    z-index: 10;
+
+    border-radius: 4px;
+
+    color: #f4f1ea;
+}
+
+.countdown-number {
+    font-size: 100px;
+
+    font-weight: bold;
+
+    animation: countdownPop 0.8s ease;
+}
+
+.countdown-overlay p {
+    font-size: 24px;
+
+    margin-top: 10px;
+}
+
+.countdown-pop {
+    animation: countdownPop 0.8s ease;
+}
+
+@keyframes countdownPop {
+
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+/* QUESTION APPEARS */
+
+.question-enter {
+    animation: questionEnter 0.7s ease;
+}
+
+@keyframes questionEnter {
+
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* CORRECT ANSWER */
+
+.answer-correct {
+    animation: correctAnswer 0.6s ease;
+}
+
+@keyframes correctAnswer {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* WRONG ANSWER */
+
+.answer-wrong {
+    animation: wrongAnswer 0.45s ease;
+}
+
+@keyframes wrongAnswer {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-7px);
+    }
+
+    50% {
+        transform: translateX(7px);
+    }
+
+    75% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* MESSAGE */
+
+.message-pop {
+    animation: messagePop 0.4s ease;
+}
+
+@keyframes messagePop {
+
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* GAME OVER */
+
+.game-over {
+    animation: gameOverPop 0.7s ease;
+}
+
+@keyframes gameOverPop {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* FADE CARDS WHEN GAME ENDS */
+
+.game-finished {
+    opacity: 0.65;
+}
+
+
+/* =================================
+   MAKE CHALKBOARD POSITIONABLE
+================================= */
+
+.chalkboard {
+    position: relative;
+}
+
+
+/* =================================
+   MEMORY SEQUENCE
+================================= */
+
+.memory-sequence-game-page{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+        url("https://media.easemytrip.com/media/Blog/India/637763055824686983/637763055824686983McBfr2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.sequence-game {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sequence-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sequence-header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.sequence-header p {
+    font-size: 20px;
+}
+
+.sequence-area {
+    background: white;
+    border-radius: 20px;
+    padding: 45px 30px;
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sequence-status {
+    font-size: 25px;
+    margin-bottom: 30px;
+    min-height: 35px;
+    text-align: center;
+}
+
+.sequence-display {
+    width: 180px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
+    margin-bottom: 35px;
+}
+
+.sequence-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.sequence-button {
+    width: 85px;
+    height: 85px;
+    border: 3px solid #6d8f72;
+    border-radius: 15px;
+    background: white;
+    color: #333;
+    font-size: 40px;
+    cursor: pointer;
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.sequence-button:hover {
+    transform: scale(1.06);
+    background: #f4f1ea;
+}
+
+.sequence-button:active {
+    transform: scale(0.95);
+}
+
+.sequence-pop {
+    animation: sequencePop 0.5s ease;
+}
+
+@keyframes sequencePop {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =================================
+   MEMORY SEQUENCE MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .sequence-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .sequence-header h1 {
+        font-size: 32px;
+    }
+
+    .sequence-area {
+        padding: 35px 15px;
+    }
+
+    .sequence-button {
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    .sequence-display {
+        font-size: 70px;
+    }
+
+}
+
+
+/* =================================
+   NUMBER MEMORY
+================================= */
+
+.number-memory-game-page{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+        url("https://media.easemytrip.com/media/Blog/India/637763055824686983/637763055824686983McBfr2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.number-memory-game {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.number-memory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.number-memory-header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.number-memory-header p {
+    font-size: 20px;
+}
+
+.number-memory-area {
+    background: white;
+    border-radius: 20px;
+    padding: 45px 30px;
+    min-height: 430px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-status {
+    font-size: 25px;
+    margin-bottom: 30px;
+    min-height: 35px;
+    text-align: center;
+}
+
+.number-display {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 8px;
+
+    margin-bottom: 30px;
+}
+
+.number-input-area {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.number-input {
+    width: 320px;
+    padding: 15px 20px;
+
+    border: 2px solid #d5d0c6;
+    border-radius: 12px;
+
+    font-size: 24px;
+    text-align: center;
+
+    outline: none;
+}
+
+.number-input:focus {
+    border-color: #6d8f72;
+}
+
+.number-input-area .game-button {
+    padding: 15px 25px;
+}
+
+.number-pop {
+    animation: numberPop 0.6s ease;
+}
+
+@keyframes numberPop {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =================================
+   NUMBER MEMORY MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .number-memory-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .number-memory-header h1 {
+        font-size: 32px;
+    }
+
+    .number-memory-area {
+        padding: 35px 15px;
+    }
+
+    .number-display {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+
+    .number-input-area {
+        flex-direction: column;
+    }
+
+    .number-input {
+        width: 90%;
+    }
+
+}
+/* =================================
+   EB AND FLOW
+================================= */
+
+.eb-and-flow-game-page{
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+        url("https://media.easemytrip.com/media/Blog/India/637763055824686983/637763055824686983McBfr2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.flow-game {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.flow-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.flow-header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.flow-header p {
+    font-size: 20px;
+}
+
+.flow-area {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flow-status {
+    font-size: 25px;
+    min-height: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* =================================
+   BLUE WATER
+================================= */
+
+.flow-water {
+    width: 100%;
+    height: 350px;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background:
+        radial-gradient(
+            ellipse at 25% 20%,
+            rgba(255,255,255,0.25),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 75% 80%,
+            rgba(0,70,140,0.18),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #4fa9d8 0%,
+            #238dcc 45%,
+            #1478b8 100%
+        );
+
+    border: 3px solid #126fa8;
+
+    box-shadow:
+        inset 0 10px 25px rgba(255,255,255,0.18),
+        inset 0 -15px 30px rgba(0,60,120,0.2),
+        0 8px 20px rgba(0,70,120,0.15);
+}
+
+
+/* =================================
+   FLOWING WATER WAVES
+================================= */
+
+.flow-water::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180%;
+    height: 100%;
+
+    left: -40%;
+    top: 0;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            transparent 25px,
+            rgba(255,255,255,0.18) 26px,
+            rgba(255,255,255,0.18) 28px,
+            transparent 29px,
+            transparent 55px
+        );
+
+    animation: waterCurrent 5s linear infinite;
+
+    pointer-events: none;
+}
+
+
+.flow-water::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180%;
+    height: 100%;
+
+    left: -40%;
+    top: 0;
+
+    background:
+        repeating-linear-gradient(
+            8deg,
+            transparent 0px,
+            transparent 42px,
+            rgba(255,255,255,0.10) 43px,
+            rgba(255,255,255,0.10) 45px,
+            transparent 46px,
+            transparent 80px
+        );
+
+    animation: waterCurrent 7s linear infinite reverse;
+
+    pointer-events: none;
+}
+
+
+@keyframes waterCurrent {
+
+    from {
+        transform: translateX(-12%);
+    }
+
+    to {
+        transform: translateX(12%);
+    }
+
+}
+
+
+/* =================================
+   WATER HIGHLIGHTS
+================================= */
+
+.water-highlight {
+    position: absolute;
+
+    width: 120px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.25);
+
+    filter: blur(1px);
+
+    z-index: 2;
+
+    animation:
+        highlightMove 4s ease-in-out infinite alternate;
+
+    pointer-events: none;
+}
+
+
+@keyframes highlightMove {
+
+    from {
+        transform: translateX(-25px);
+        opacity: 0.25;
+    }
+
+    to {
+        transform: translateX(35px);
+        opacity: 0.65;
+    }
+
+}
+
+
+/* =================================
+   LEAF
+================================= */
+
+.flow-leaf {
+    position: absolute;
+
+    width: 90px;
+    height: 90px;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+
+    transform: translate(-50%, -50%);
+
+    filter:
+        drop-shadow(
+            0 8px 7px rgba(0,40,60,0.25)
+        );
+
+    pointer-events: none;
+}
+
+
+.flow-leaf .leaf-image {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+
+    display: block;
+
+    transform-origin: center;
+}
+
+
+/* =================================
+   GREEN LEAF
+================================= */
+
+.flow-leaf.green .leaf-image {
+    filter:
+        sepia(1)
+        saturate(5)
+        hue-rotate(55deg)
+        brightness(0.78)
+        contrast(1.05);
+}
+
+
+/* =================================
+   YELLOW LEAF
+================================= */
+
+.flow-leaf.yellow .leaf-image {
+    filter:
+        sepia(1)
+        saturate(6)
+        hue-rotate(355deg)
+        brightness(1.1)
+        contrast(1.05);
+}
+
+
+/* LEAF DIRECTION */
+
+.point-left {
+    transform: rotate(225deg);
+}
+
+.point-right {
+    transform: rotate(45deg);
+}
+
+.point-down {
+    transform: rotate(135deg);
+}
+
+.point-up {
+    transform: rotate(315deg);
+}
+
+
+
+/* =================================
+   FLOW DIRECTION
+================================= */
+
+/*
+   The leaf now travels noticeably
+   in the direction of the water current.
+*/
+
+.move-left {
+    animation:
+        flowLeft 2.2s ease-in-out infinite alternate;
+}
+
+.move-right {
+    animation:
+        flowRight 2.2s ease-in-out infinite alternate;
+}
+
+.move-up {
+    animation:
+        flowUp 2.2s ease-in-out infinite alternate;
+}
+
+.move-down {
+    animation:
+        flowDown 2.2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flowLeft {
+
+    from {
+        margin-left: 90px;
+    }
+
+    to {
+        margin-left: -90px;
+    }
+
+}
+
+
+@keyframes flowRight {
+
+    from {
+        margin-left: -90px;
+    }
+
+    to {
+        margin-left: 90px;
+    }
+
+}
+
+
+@keyframes flowUp {
+
+    from {
+        margin-top: 80px;
+    }
+
+    to {
+        margin-top: -80px;
+    }
+
+}
+
+
+@keyframes flowDown {
+
+    from {
+        margin-top: -80px;
+    }
+
+    to {
+        margin-top: 80px;
+    }
+
+}
+
+
+/* =================================
+   CORRECT
+================================= */
+
+.flow-correct {
+    animation:
+        leafCorrect 0.55s ease forwards !important;
+}
+
+
+@keyframes leafCorrect {
+
+    0% {
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate(-50%, -50%)
+            scale(1.25);
+    }
+
+    100% {
+        transform:
+            translate(-50%, -50%)
+            scale(0);
+        opacity: 0;
+    }
+
+}
+
+
+/* =================================
+   WRONG
+================================= */
+
+.flow-wrong {
+    animation:
+        leafWrong 0.45s ease !important;
+}
+
+
+@keyframes leafWrong {
+
+    0% {
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg);
+    }
+
+    25% {
+        transform:
+            translate(-50%, -50%)
+            rotate(-10deg);
+    }
+
+    50% {
+        transform:
+            translate(-50%, -50%)
+            rotate(10deg);
+    }
+
+    75% {
+        transform:
+            translate(-50%, -50%)
+            rotate(-6deg);
+    }
+
+    100% {
+        transform:
+            translate(-50%, -50%)
+            rotate(0deg);
+    }
+
+}
+
+
+/* =================================
+   CONTROLS
+================================= */
+
+.flow-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.flow-control {
+    width: 65px;
+    height: 55px;
+
+    border: 2px solid #6d8f72;
+    border-radius: 12px;
+
+    background: white;
+    color: #333;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.flow-control:hover {
+    transform: translateY(-3px);
+    background: #f4f1ea;
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,0.1);
+}
+
+.flow-control:active {
+    transform: scale(0.94);
+}
+
+
+/* =================================
+   HELP
+================================= */
+
+.flow-help {
+    margin-top: 18px;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 600px) {
+
+    .flow-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .flow-header h1 {
+        font-size: 32px;
+    }
+
+    .flow-area {
+        padding: 20px 12px;
+    }
+
+    .flow-water {
+        height: 300px;
+    }
+
+    .flow-leaf {
+        width: 70px;
+        height: 70px;
+    }
+
+    .flow-leaf .leaf-image {
+        width: 62px;
+        height: 62px;
+    }
+
+    .flow-control {
+        width: 55px;
+        height: 50px;
+    }
+
+}
