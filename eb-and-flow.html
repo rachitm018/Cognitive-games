@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eb and Flow</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="eb-and-flow-game-page">
+
+        <div class="game-container">
+
+            <a href="games.html" class="back-link">
+                ← Back to Games
+            </a>
+
+            <div class="flow-game">
+
+                <!-- HEADER -->
+
+                <div class="flow-header">
+
+                    <div>
+                        <h1>Eb and Flow</h1>
+
+                        <p>
+                            Follow the leaf's direction or its flow.
+                        </p>
+                    </div>
+
+                    <button
+                        class="restart-button"
+                        onclick="startFlowGame()">
+                        Restart
+                    </button>
+
+                </div>
+
+
+                <!-- STATS -->
+
+                <div class="game-stats">
+
+                    <div class="stat-box">
+                        <span>Score</span>
+                        <strong id="flowScore">0</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Round</span>
+                        <strong id="flowRound">1</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Lives</span>
+                        <strong id="flowLives">3</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- GAME AREA -->
+
+                <div class="flow-area">
+
+                    <!-- STATUS / COUNTDOWN -->
+
+                    <div
+                        id="flowStatus"
+                        class="flow-status">
+                        Get ready...
+                    </div>
+
+
+                    <!-- WATER -->
+
+                    <div
+                        id="flowWater"
+                        class="flow-water">
+
+                        <!-- Water highlights -->
+
+                        <div
+                            class="water-highlight"
+                            style="top: 25%; left: 10%;">
+                        </div>
+
+                        <div
+                            class="water-highlight"
+                            style="top: 70%; left: 65%; animation-delay: 1.5s;">
+                        </div>
+
+
+                        <!-- LEAF -->
+
+                        <div
+                            id="flowLeaf"
+                            class="flow-leaf">
+
+                            <img
+                                src="assets/images/leaf.svg"
+                                alt="Leaf"
+                                class="leaf-image">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        id="flowMessage"
+                        class="game-message">
+                    </div>
+
+
+                    <!-- ARROW CONTROLS -->
+
+                    <div class="flow-controls">
+
+                        <button
+                            class="flow-control"
+                            onclick="chooseFlow('left')"
+                            aria-label="Left">
+                            ←
+                        </button>
+
+                        <button
+                            class="flow-control"
+                            onclick="chooseFlow('right')"
+                            aria-label="Right">
+                            →
+                        </button>
+
+                        <button
+                            class="flow-control"
+                            onclick="chooseFlow('up')"
+                            aria-label="Up">
+                            ↑
+                        </button>
+
+                        <button
+                            class="flow-control"
+                            onclick="chooseFlow('down')"
+                            aria-label="Down">
+                            ↓
+                        </button>
+
+                    </div>
+
+
+                    <!-- HELP -->
+
+                    <p class="flow-help">
+                        🟢 Green: follow the leaf.
+                        🟡 Yellow: follow the flow.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- GAME JAVASCRIPT -->
+
+    <script src="js/eb-and-flow.js"></script>
+
+</body>
+
+</html>

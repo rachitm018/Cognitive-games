@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chalkboard Challenge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="chalkboard-game-page">
+
+        <div class="game-container">
+
+            <a href="games.html" class="back-link">
+                ← Back to Games
+            </a>
+
+            <div class="chalkboard-game">
+
+                <div class="chalkboard-header">
+
+                    <div>
+                        <h1>Chalkboard Challenge</h1>
+
+                        <p>
+                            Which side has the greater value?
+                        </p>
+                    </div>
+
+                    <button
+                        class="restart-button"
+                        onclick="startChalkboardGame()">
+                        Restart
+                    </button>
+
+                </div>
+
+
+                <!-- GAME INFO -->
+
+                <div class="game-stats">
+
+                    <div class="stat-box">
+                        <span>Score</span>
+                        <strong id="score">0</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Time</span>
+                        <strong id="timer">60</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Round</span>
+                        <strong id="round">1</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- CHALKBOARD -->
+
+                <div class="chalkboard">
+
+                    <div class="chalk-question">
+                        Which is greater?
+                    </div>
+
+                    <div class="number-area">
+
+                        <button
+                            class="number-card"
+                            id="leftCard"
+                            onclick="chooseAnswer('left')">
+
+                            <span id="leftExpression">
+                                20
+                            </span>
+
+                        </button>
+
+
+                        <div class="vs">
+                            OR
+                        </div>
+
+
+                        <button
+                            class="number-card"
+                            id="rightCard"
+                            onclick="chooseAnswer('right')">
+
+                            <span id="rightExpression">
+                                35
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="equal-option">
+
+                        <button
+                            class="equal-button"
+                            onclick="chooseAnswer('equal')">
+
+                            ↓ Both are equal
+
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="chalkMessage"
+                        class="chalk-message">
+                    </div>
+
+                </div>
+
+
+                <!-- CONTROLS -->
+
+                <div class="keyboard-help">
+
+                    <p>Keyboard controls</p>
+
+                    <div class="key-row">
+
+                        <span class="key">
+                            ←
+                        </span>
+
+                        <span>
+                            Left number is greater
+                        </span>
+
+                    </div>
+
+                    <div class="key-row">
+
+                        <span class="key">
+                            →
+                        </span>
+
+                        <span>
+                            Right number is greater
+                        </span>
+
+                    </div>
+
+                    <div class="key-row">
+
+                        <span class="key">
+                            ↓
+                        </span>
+
+                        <span>
+                            Both are equal
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/chalkboard-challenge.js"></script>
+
+</body>
+
+</html>

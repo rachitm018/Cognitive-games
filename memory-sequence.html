@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memory Sequence</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="memory-sequence-game-page">
+
+        <div class="game-container">
+
+            <a href="games.html" class="back-link">
+                ← Back to Games
+            </a>
+
+            <div class="sequence-game">
+
+                <div class="sequence-header">
+
+                    <div>
+                        <h1>Memory Sequence</h1>
+
+                        <p>
+                            Remember the sequence and repeat it.
+                        </p>
+                    </div>
+
+                    <button
+                        class="restart-button"
+                        onclick="startSequenceGame()">
+                        Restart
+                    </button>
+
+                </div>
+
+
+                <!-- GAME INFO -->
+
+                <div class="game-stats">
+
+                    <div class="stat-box">
+                        <span>Score</span>
+                        <strong id="sequenceScore">0</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Round</span>
+                        <strong id="sequenceRound">1</strong>
+                    </div>
+
+                    <div class="stat-box">
+                        <span>Length</span>
+                        <strong id="sequenceLength">3</strong>
+                    </div>
+
+                </div>
+
+
+                <!-- SEQUENCE AREA -->
+
+                <div class="sequence-area">
+
+                    <div
+                        id="sequenceStatus"
+                        class="sequence-status">
+                        Get ready...
+                    </div>
+
+
+                    <div
+                        id="sequenceDisplay"
+                        class="sequence-display">
+                    </div>
+
+
+                    <div
+                        id="sequenceButtons"
+                        class="sequence-buttons">
+                    </div>
+
+
+                    <div
+                        id="sequenceMessage"
+                        class="game-message">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/memory-sequence.js"></script>
+
+</body>
+
+</html>
