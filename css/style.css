@@ -2062,28 +2062,28 @@ h1 {
    GREEN LEAF
 ================================= */
 
-.flow-leaf.green .leaf-image {
+/* .flow-leaf.green .leaf-image {
     filter:
         sepia(1)
         saturate(5)
         hue-rotate(55deg)
         brightness(0.78)
         contrast(1.05);
-}
+} */
 
 
 /* =================================
    YELLOW LEAF
 ================================= */
 
-.flow-leaf.yellow .leaf-image {
+/* .flow-leaf.yellow .leaf-image {
     filter:
         sepia(1)
         saturate(6)
         hue-rotate(355deg)
         brightness(1.1)
         contrast(1.05);
-}
+} */
 
 
 /* LEAF DIRECTION */
