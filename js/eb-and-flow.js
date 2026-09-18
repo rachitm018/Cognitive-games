@@ -142,6 +142,9 @@ function nextLeaf() {
     // =================================
 
     leaf.classList.add(type);
+    leafImage.src = type === "green"
+    ? "assets/images/leaf-green.svg"
+    : "assets/images/leaf-yellow.svg";
 
 
     // =================================
