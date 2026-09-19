@@ -109,6 +109,273 @@
 
     </main>
 
+    <!-- CHATBOT BUTTON -->
+<button id="chatbot-btn" class="chatbot-btn">
+    💬
+</button>
+
+
+<!-- CHATBOT BOX -->
+<div id="chatbot-box" class="chatbot-box">
+
+    <!-- Chatbot Header -->
+    <div class="chatbot-header">
+        <div>
+            <h3>CogniCare Assistant</h3>
+            <p>I'm here to help you 😊</p>
+        </div>
+
+        <button id="close-chat">×</button>
+    </div>
+
+
+    <!-- Chat Messages -->
+    <div id="chat-messages" class="chat-messages">
+
+        <div class="bot-message">
+            Hello! 👋 I'm your CogniCare Assistant.
+            <br><br>
+            I can help you choose a game, explain activities,
+            or answer questions about CogniCare.
+        </div>
+
+    </div>
+
+
+    <!-- Quick Questions -->
+    <div class="quick-questions">
+
+        <button onclick="askQuestion('Which game should I play?')">
+            🎮 Suggest a game
+        </button>
+
+        <button onclick="askQuestion('What is Number Memory?')">
+            🔢 Number Memory
+        </button>
+
+        <button onclick="askQuestion('How does CogniCare help?')">
+            🧠 How does it help?
+        </button>
+
+        <button onclick="askQuestion('What games are available?')">
+            🎯 Available games
+        </button>
+
+    </div>
+
+
+    <!-- Input -->
+    <div class="chat-input">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Type your question..."
+        >
+
+        <button id="send-btn">
+            ➤
+        </button>
+
+    </div>
+
+</div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CogniCare — Cognitive Games</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="landing-nav">
+
+        <div class="brand">
+
+            <span class="brand-mark">
+                <svg class="sparkle-icon" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1 L13.2 8.8 L21 11 L13.2 13.2 L11 21 L8.8 13.2 L1 11 L8.8 8.8 Z" stroke="#FFFFFF" stroke-width="1"/>
+                </svg>
+            </span>
+
+            <span class="brand-name">CogniCare</span>
+
+        </div>
+
+        <nav class="nav-links">
+            <div class="nav-actions">
+
+    
+    
+</div>
+            <a href="games.html">Games</a>
+            <a href="#how-it-helps">How it helps</a>
+
+            <button class="nav-cta" onclick="startGame()">
+                Start playing
+            </button>
+        </nav>
+
+    </header>
+
+
+    <main class="hero">
+
+        <div class="hero-copy">
+       
+
+            <p class="hero-eyebrow">Gentle play, meaningful moments</p>
+
+            <h1 class="hero-title">
+                Keep the mind active, one joyful game at a time.
+            </h1>
+
+            <p class="hero-description">
+                Simple, calming cognitive games designed for people living with dementia—made
+                to encourage memory, focus, and confidence without pressure.
+            </p>
+
+            <div class="hero-actions">
+
+                <button class="btn-primary" onclick="startGame()">
+                    Explore free games
+                </button>
+
+                <a href="#how-it-works" class="btn-secondary">
+                    How it works
+                </a>
+
+            </div>
+
+            <div class="trust-note">
+
+                <svg class="circle-x-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="10" cy="10" r="8.5" stroke="#1D6F64" stroke-width="2"/>
+                    <line x1="6.5" y1="6.5" x2="13.5" y2="13.5" stroke="#1D6F64" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13.5" y1="6.5" x2="6.5" y2="13.5" stroke="#1D6F64" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+                <span>No negativity, Just chill</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="game-preview">
+
+            <div class="decorative-circle"></div>
+
+            <div class="preview-card" onclick="openPreviewGame('number-memory.html')">
+
+                <div class="preview-heading">
+
+                    <div class="preview-label">
+                        <span class="preview-prompt">Today's gentle game</span>
+                        <span class="preview-title">Number Memory</span>
+                    </div>
+
+                    <span class="preview-progress"></span>
+
+                </div>
+
+                <img
+                    src="assets/images/wooden-numbers.png"
+                    alt="Number Memory game preview"
+                    class="preview-image">
+
+            </div>
+
+        </div>
+        <!-- CHATBOT BUTTON -->
+<button id="chatbot-btn" class="chatbot-btn">
+    💬
+</button>
+
+
+<!-- CHATBOT BOX -->
+<div id="chatbot-box" class="chatbot-box">
+
+    <!-- Chatbot Header -->
+    <div class="chatbot-header">
+        <div>
+            <h3>CogniCare Assistant</h3>
+            <p>I'm here to help you 😊</p>
+        </div>
+
+        <button id="close-chat">×</button>
+    </div>
+
+
+    <!-- Chat Messages -->
+    <div id="chat-messages" class="chat-messages">
+
+        <div class="bot-message">
+            Hello! 👋 I'm your CogniCare Assistant.
+            <br><br>
+            I can help you choose a game, explain activities,
+            or answer questions about CogniCare.
+        </div>
+
+    </div>
+
+
+    <!-- Quick Questions -->
+    <div class="quick-questions">
+
+        <button onclick="askQuestion('Which game should I play?')">
+            🎮 Suggest a game
+        </button>
+
+        <button onclick="askQuestion('What is Number Memory?')">
+            🔢 Number Memory
+        </button>
+
+        <button onclick="askQuestion('How does CogniCare help?')">
+            🧠 How does it help?
+        </button>
+
+        <button onclick="askQuestion('What games are available?')">
+            🎯 Available games
+        </button>
+
+    </div>
+
+
+    <!-- Input -->
+    <div class="chat-input">
+
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Type your question..."
+        >
+
+        <button id="send-btn">
+            ➤
+        </button>
+
+    </div>
+
+</div>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+    <script src="js/language.js"></script>
+
+</body>
+</html>
 
     <script src="js/app.js"></script>
 
