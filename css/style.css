@@ -2662,3 +2662,73 @@ h1 {
     }
 
 }
+
+/* =================================
+   NORTHEAST LANGUAGE SWITCHER
+   Kept inside the existing page layout so it does not float over content.
+================================= */
+.cognicare-language-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    border: 1px solid rgba(29,111,100,.22);
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+    font-family: Arial, sans-serif;
+    flex-shrink: 0;
+}
+.cognicare-language-icon {
+    font-size: 15px;
+    line-height: 1;
+}
+#cognicare-language-switcher {
+    min-width: 145px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #18312B;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.landing-nav .cognicare-language-wrap {
+    margin-left: auto;
+}
+.nav-links .cognicare-language-wrap {
+    margin-right: 2px;
+}
+.games-header .cognicare-language-wrap {
+    margin-left: auto;
+}
+.game-container > .cognicare-language-wrap {
+    align-self: flex-end;
+    margin: 0 0 14px auto;
+}
+.profile-card > .cognicare-language-wrap {
+    align-self: center;
+    margin-top: 18px;
+}
+@media (max-width: 800px) {
+    .landing-nav {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+    }
+    #cognicare-language-switcher {
+        min-width: 125px;
+    }
+}
+@media (max-width: 600px) {
+    .cognicare-language-wrap {
+        padding: 7px 9px;
+    }
+    #cognicare-language-switcher {
+        min-width: 115px;
+        max-width: 150px;
+        font-size: 12px;
+    }
+}
